@@ -61,26 +61,29 @@ function Hero() {
         <div
           ref={divRefs.current[0]}
           id="div1"
-          className="snap-start bg-white w-screen h-screen flex flex-col items-center justify-center"
+          className="snap-start bg-white w-screen h-screen flex flex-col items-center justify-center font-raleway"
         >
-          <img src={RobGrad} alt="Rob Grad" className="img-contained mt-80" />
-          <div className="flex flex-col items-center">
-            <p className="text-xl font-bold font-raleway">Welcome, I'm</p>
-            <h2 className="text-[120px] font-oleo -mt-5">Robert</h2>
-            <h2 className="text-[120px] -mt-16 font-oleo">Perez</h2>
-            <div className="-mt-4 text-base font-raleway text-[20px] leading-[33px] mb-[30px] col:text-[15px] col:leading-[28px] md:mx-[80px] col:mx-0 w-full sm:w-3/4 md:w-1/3 lg:max-w-xlg bg-white p-5 rounded">
-              I currently work for Ben Inc as a Full Stack Engineer. I have a
-              wide range of skills and experience in Full Stack Development, and
-              I'm always looking to learn more.
-            </div>
-            <div className="quoteBox bg-black p-5 rounded flex items-center justify-center w-1/3 h-1.5/3 -mt-8">
-              <div className="mt-5 text-white text-base font-raleway text-[30px] leading-[33px] mb-[30px] col:text-[15px] col:leading-[28px] md:mx-[80px] col:mx-0 w-3/4 flex items-center justify-center">
-                I turn ideas into outstanding Full Stack Applications with
-                Effective Collaboration, that results in Team Success, Client
-                Satifaction, User Engagment, and Ground Breaking Products.
-              </div>
-            </div>
+          <img src={RobGrad} alt="Rob Grad" className="img-contained" />
+          <h3 className="text-gray-800 sm:mt-2">Welcome, I'm</h3>
+          <h1 className="font-oleo font-raleway sm:-mb-8 sm:-mt-4">Robert</h1>
+          <h1 className="font-oleo">Perez</h1>
+          <h2 className="font-raleway -mt-2 mb-3">Full Stack Engineer</h2>
+          {/* <p className="text-base text-center sm:px-12 sm:w-2/3 text-gray-800 sm:mb-4">
+            I currently work for Ben Inc as a Full Stack Engineer. I have a wide
+            range of skills and experience in Full Stack Development, and I'm
+            always looking to learn more.
+          </p> */}
+          <div className="quoteBox bg-black p-5 rounded flex items-center justify-center w-2/3">
+            <p className="text-white text-base font-raleway leading-[33px] mb-[30px] col:text-[15px] col:leading-[28px] md:mx-[80px] col:mx-0 w-3/4 flex items-center justify-center mt-9">
+              I turn ideas into outstanding Full Stack Applications with
+              Effective Collaboration, that results in Team Success, Client
+              Satifaction, User Engagment, and Ground Breaking Products.
+            </p>
           </div>
+          <p className="text-base sm:px-12 sm:w-2/3 text-gray-800 sm:mt-4">
+            Let’s start by looking at some of my work history and past
+            accomplishments to back this up!
+          </p>
         </div>
 
         <div
@@ -88,15 +91,11 @@ function Hero() {
           id="div2"
           className="snap-start bg-white w-screen h-screen flex items-center justify-center"
         >
-          <div className="w-1/2 h-screen flex items-center justify-center bg-white">
-            Left
-          </div>
-          <div className="w-1/2 h-screen flex items-center justify-center bg-white">
-            <div className="ml-auto mr-48">
-              <h2 className="text-[60px] font-oleo -mt-5 -mb-7 w-2/5 ml-7">
-                Career
-              </h2>
-              <p className="mt-5 text-base font-raleway text-[20px] leading-[33px] mb-[30px] col:text-[15px] col:leading-[28px] md:mx-[80px] w-1/3">
+          <div className="w-1/2 h-screen flex flex-row items-center justify-center bg-white">
+            <div className="w-1/2 sm:hidden">img</div>
+            <div className="w-1/2">
+              <h2 className="font-oleo">Career</h2>
+              <p className="font-oleo text-[20px]">
                 When working on a project I'm passionate about, I'm a dedicated
                 team player who is always striving to improve himself and his
                 team. Through my experience, I've learned that the best way to
@@ -104,15 +103,6 @@ function Hero() {
                 and a team that is willing to work together to achieve the same
                 goal.
               </p>
-              <div className="space-x-4 mt-5 w-1/3 ml-20">
-                <button className="bg-black text-white rounded px-4 py-2">
-                  Qualifications
-                </button>
-                <button className="border-black border-2 text-black rounded px-4 py-2">
-                  Contact
-                </button>
-                <button className="underline text-gray-600">TL;DR</button>
-              </div>
             </div>
           </div>
         </div>
