@@ -100,7 +100,7 @@ function Hero() {
                 team player who is always striving to improve himself and his
                 team. Through my experience, I've learned that the best way to
                 achieve success is to have a clear vision, a well-defined plan,
-                and a team that is willing to work together to achieve the same
+                and a team that is willing to work togeter to achieve the same
                 goal.
               </p>
             </div>
