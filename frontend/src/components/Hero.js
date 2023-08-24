@@ -176,7 +176,7 @@ function Hero() {
                 then, I have undertaken numerous contracts for businesses,
                 continuously expanding my professional horizons.
               </p>
-              <div className="relative w-[400px] overflow-hidden">
+              <div className="relative w-[400px] overflow-hidden sm:ml-9">
                 <input
                   type="checkbox"
                   className="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer"
@@ -205,7 +205,7 @@ function Hero() {
                   </p>
                 </div>
               </div>
-              <div className="relative w-[400px] overflow-hidden">
+              <div className="relative w-[400px] overflow-hidden sm:ml-9">
                 <input
                   type="checkbox"
                   className="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer"
@@ -234,7 +234,7 @@ function Hero() {
                   </p>
                 </div>
               </div>
-              <div className="relative w-[400px] overflow-hidden">
+              <div className="relative w-[400px] overflow-hidden sm:ml-9">
                 <input
                   type="checkbox"
                   className="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer"
