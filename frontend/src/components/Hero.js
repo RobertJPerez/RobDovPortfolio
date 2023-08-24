@@ -198,10 +198,18 @@ function Hero() {
                     />
                   </svg>
                 </div>
-                <div className="bg-white overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-40">
+                <div className="bg-white overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-80">
                   <div className="p-4"></div>
                   <p className="text-lg">
-                    I owkred here for a long long long long long logn time
+                    I owkred here for a long lBorn in the year 2000, my life has
+                    been characterized by constant change and innovation. From
+                    an early age, I was captivated by the transformative power
+                    of technology. My passion began to manifest during my
+                    teenage years when I delved into programming, creating
+                    modifications for my favorite games. This was my initial
+                    foray into the realm of digital creation, fulfilling my
+                    desire to innovate and craft better experiences.ong long
+                    long long logn time
                   </p>
                 </div>
               </div>
@@ -227,7 +235,7 @@ function Hero() {
                     />
                   </svg>
                 </div>
-                <div className="bg-white overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-40">
+                <div className="bg-white overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-80">
                   <div className="p-4"></div>
                   <p className="text-lg">
                     I owkred here for a long long long long long logn time
@@ -256,7 +264,7 @@ function Hero() {
                     />
                   </svg>
                 </div>
-                <div className="bg-white overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-40">
+                <div className="bg-white overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-80">
                   <div className="p-4"></div>
                   <p className="text-lg">
                     I owkred here for a long long long long long logn time
@@ -277,7 +285,11 @@ function Hero() {
           </div>
         </div>
 
-        <div className="snap-start bg-white w-screen h-screen flex flex-col items-center justify-center">
+        <div
+          ref={divRefs.current[2]}
+          id="div3"
+          className="snap-start bg-white w-screen h-screen flex flex-col items-center justify-center"
+        >
           <div className="flex flex-row space-x-4">
             <button
               onClick={() => setActiveSkill('technical')}
