@@ -3,6 +3,9 @@ import '../App.css';
 import { Tooltip } from 'react-tooltip';
 import RobGrad from '../images/RobGrad.png';
 import 'react-tooltip/dist/react-tooltip.css';
+import { Carousel, initTE } from 'tw-elements';
+
+initTE({ Carousel });
 
 const TOOLTIP_IDS = [
   'tooltip1',
@@ -373,137 +376,9 @@ function Hero() {
                 ))}
           </div>
         </div>
-        <div className="snap-start bg-white w-screen h-screen flex items-center justify-center">
-          <div className="sm:w-screen w-1/2 h-screen flex flex-row items-center justify-center bg-white">
-            <div className="md:w-1/2 sm:hidden">img</div>
-            <div className="sm:w-11/12 w-1/2 items-center sm:ml-3 sm:space-y-4">
-              <h2 className="font-oleo sm:mr-4">Experience</h2>
-              <p className="font-raleway text-base text-justify sm:w-4/5 sm:m-10 justify-center text-gray-800 peer-checked:hidden">
-                Born in the year 2000, my life has been characterized by
-                constant change and innovation. From an early age, I was
-                captivated by the transformative power of technology. My passion
-                began to manifest during my teenage years when I delved into
-                programming, creating modifications for my favorite games. This
-                was my initial foray into the realm of digital creation,
-                fulfilling my desire to innovate and craft better experiences.
-              </p>
-              <p className="font-raleway text-base text-justify sm:w-4/5 sm:m-10 justify-center text-gray-800 peer-checked:hidden">
-                My academic journey at the University of Delaware, majoring in
-                Computer Science, further honed my skills. It transformed my
-                hobby into a refined craft. I immersed myself in the
-                foundational concepts of CS and the multiplying value of
-                teamwork. After graduating in 2023, brimming with enthusiasm for
-                the industry, I joined Ben Inc as a Full Stack Engineer. Since
-                then, I have undertaken numerous contracts for businesses,
-                continuously expanding my professional horizons.
-              </p>
-              <div className="relative w-[400px] overflow-hidden sm:ml-9">
-                <input
-                  type="checkbox"
-                  className="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer"
-                />
-                <div className="bg-black h-12 w-full pl-5 flex items-center">
-                  <h1 className="text-lg text-white">University of Delaware</h1>
-                </div>
-                <div className="absolute top-3 right-3 text-white transition-transform duration-500 rotate-0 peer-checked:rotate-90">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="white"
-                    class="w-6 h-6"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                </div>
-                <div className="bg-white overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-80">
-                  <div className="p-4"></div>
-                  <p className="text-lg">
-                    I owkred here for a long lBorn in the year 2000, my life has
-                    been characterized by constant change and innovation. From
-                    an early age, I was captivated by the transformative power
-                    of technology. My passion began to manifest during my
-                    teenage years when I delved into programming, creating
-                    modifications for my favorite games. This was my initial
-                    foray into the realm of digital creation, fulfilling my
-                    desire to innovate and craft better experiences.ong long
-                    long long logn time
-                  </p>
-                </div>
-              </div>
-              <div className="relative w-[400px] overflow-hidden sm:ml-9">
-                <input
-                  type="checkbox"
-                  className="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer"
-                />
-                <div className="bg-black h-12 w-full pl-5 flex items-center">
-                  <h1 className="text-lg text-white">Ben Inc</h1>
-                </div>
-                <div className="absolute top-3 right-3 text-white transition-transform duration-500 rotate-0 peer-checked:rotate-90">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="white"
-                    class="w-6 h-6"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                </div>
-                <div className="bg-white overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-80">
-                  <div className="p-4"></div>
-                  <p className="text-lg">
-                    I owkred here for a long long long long long logn time
-                  </p>
-                </div>
-              </div>
-              <div className="relative w-[400px] overflow-hidden sm:ml-9">
-                <input
-                  type="checkbox"
-                  className="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer"
-                />
-                <div className="bg-black h-12 w-full pl-5 flex items-center">
-                  <h1 className="text-lg text-white">Contract work</h1>
-                </div>
-                <div className="absolute top-3 right-3 text-white transition-transform duration-500 rotate-0 peer-checked:rotate-90">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="white"
-                    class="w-6 h-6"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                </div>
-                <div className="bg-white overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-80">
-                  <div className="p-4"></div>
-                  <p className="text-lg">
-                    I owkred here for a long long long long long logn time
-                  </p>
-                </div>
-              </div>
 
-              <div className="space-x-4 mt-5">
-                <button className="bg-black text-white rounded px-4 py-2">
-                  Qualifications
-                </button>
-                <button className="border-black border-2 text-black rounded px-4 py-2">
-                  Contact
-                </button>
-                <button className="underline text-gray-600">TL;DR</button>
-              </div>
-            </div>
-          </div>
+        <div className="snap-start bg-white w-screen h-screen flex items-center justify-center">
+          <div className="sm:w-screen w-1/2 h-screen flex flex-row items-center justify-center bg-white"></div>
         </div>
         <div
           ref={divRefs.current[3]}
