@@ -378,8 +378,18 @@ function Hero() {
         </div>
 
         <div className="snap-start bg-white w-screen h-screen flex items-center justify-center">
-          <div className="sm:w-screen w-1/2 h-screen flex flex-row items-center justify-center bg-white"></div>
+          <p className="font-raleway text-base text-justify sm:w-4/5 sm:m-10 justify-center text-gray-800 peer-checked:hidden">
+            My academic journey at the University of Delaware, majoring in
+            Computer Science, further honed my skills. It transformed my hobby
+            into a refined craft. I immersed myself in the foundational concepts
+            of CS and the multiplying value of teamwork. After graduating in
+            2023, brimming with enthusiasm for the industry, I joined Ben Inc as
+            a Full Stack Engineer. Since then, I have undertaken numerous
+            contracts for businesses, continuously expanding my professional
+            horizons.
+          </p>
         </div>
+
         <div
           ref={divRefs.current[3]}
           id="div4"
@@ -390,10 +400,66 @@ function Hero() {
         <div
           ref={divRefs.current[4]}
           id="div5"
-          className="snap-start bg-red-200 w-screen h-screen flex items-center justify-center"
+          className="snap-start bg-white w-screen h-screen flex items-center justify-center"
         >
-          5
+          <form className="w-3/4 md:w-1/2">
+            <div className="mb-4">
+              <label
+                htmlFor="fullName"
+                className="block text-gray-700 text-sm font-bold mb-2"
+              >
+                Full Name:
+              </label>
+              <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                placeholder="John Doe"
+              />
+            </div>
+
+            <div className="mb-4">
+              <label
+                htmlFor="email"
+                className="block text-gray-700 text-sm font-bold mb-2"
+              >
+                Email:
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                placeholder="johndoe@example.com"
+              />
+            </div>
+
+            <div className="mb-4">
+              <label
+                htmlFor="message"
+                className="block text-gray-700 text-sm font-bold mb-2"
+              >
+                Leave a message:
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                placeholder="Type your message here..."
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            >
+              Submit
+            </button>
+          </form>
         </div>
+
         <div
           ref={divRefs.current[5]}
           id="div6"
