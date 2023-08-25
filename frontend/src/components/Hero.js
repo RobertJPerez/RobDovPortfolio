@@ -400,60 +400,61 @@ function Hero() {
         <div
           ref={divRefs.current[4]}
           id="div5"
-          className="snap-start bg-white w-screen h-screen flex items-center justify-center"
+          className="snap-start bg-white w-screen h-screen flex items-center justify-center font-raleway"
         >
           <form className="w-3/4 md:w-1/2">
+            <h2 className="font-raleway text-[24px] sm:mr-4">
+              Get in Contact, Fill out the Form
+            </h2>
+
             <div className="mb-4">
               <label
                 htmlFor="fullName"
-                className="block text-gray-700 text-sm font-bold mb-2"
+                className="block text-gray-700 text-sm font-bold mb-2 text-left"
               >
-                Full Name:
+                Full Name
               </label>
               <input
                 type="text"
                 id="fullName"
                 name="fullName"
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                placeholder="John Doe"
               />
             </div>
 
             <div className="mb-4">
               <label
                 htmlFor="email"
-                className="block text-gray-700 text-sm font-bold mb-2"
+                className="block text-gray-700 text-sm font-bold mb-2 text-left"
               >
-                Email:
+                Email*
               </label>
               <input
                 type="email"
                 id="email"
                 name="email"
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                placeholder="johndoe@example.com"
               />
             </div>
 
             <div className="mb-4">
               <label
                 htmlFor="message"
-                className="block text-gray-700 text-sm font-bold mb-2"
+                className="block text-gray-700 text-sm font-bold mb-2 text-left"
               >
-                Leave a message:
+                Leave a message here.
               </label>
               <textarea
                 id="message"
                 name="message"
                 rows="5"
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                placeholder="Type your message here..."
               ></textarea>
             </div>
 
             <button
               type="submit"
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              className="bg-black hover:bg-black text-white font-bold py-3 px-28 rounded-3xl"
             >
               Submit
             </button>
