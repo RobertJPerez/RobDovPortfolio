@@ -377,17 +377,76 @@ function Hero() {
           </div>
         </div>
 
-        <div className="snap-start bg-white w-screen h-screen flex items-center justify-center">
-          <p className="font-raleway text-base text-justify sm:w-4/5 sm:m-10 justify-center text-gray-800 peer-checked:hidden">
-            My academic journey at the University of Delaware, majoring in
-            Computer Science, further honed my skills. It transformed my hobby
-            into a refined craft. I immersed myself in the foundational concepts
-            of CS and the multiplying value of teamwork. After graduating in
-            2023, brimming with enthusiasm for the industry, I joined Ben Inc as
-            a Full Stack Engineer. Since then, I have undertaken numerous
-            contracts for businesses, continuously expanding my professional
-            horizons.
-          </p>
+        <div className="snap-start bg-white w-screen h-screen text-white text-raleway">
+          <body>
+            <div class="wrapper">
+              <ul class="carousel">
+                <li class="card">
+                  <div class="cardimg">
+                    <img src={RobGrad} alt="img" />
+                  </div>
+                  <h2>Project 1</h2>
+                  <span>Javascript</span>
+                </li>
+                <li class="card">
+                  <div class="cardimg">
+                    <img src={RobGrad} alt="img" />
+                  </div>
+                  <h2>Project 1</h2>
+                  <span>Javascript</span>
+                </li>
+                <li class="card">
+                  <div class="cardimg">
+                    <img src={RobGrad} alt="img" />
+                  </div>
+                  <h2>Project 2</h2>
+                  <span>Javascript</span>
+                </li>
+                <li class="card">
+                  <div class="cardimg">
+                    <img src={RobGrad} alt="img" />
+                  </div>
+                  <h2>Project 3</h2>
+                  <span>Javascript</span>
+                </li>
+                <li class="card">
+                  <div class="cardimg">
+                    <img src={RobGrad} alt="img" />
+                  </div>
+                  <h2>Project 4</h2>
+                  <span>Javascript</span>
+                </li>
+                <li class="card">
+                  <div class="cardimg">
+                    <img src={RobGrad} alt="img" />
+                  </div>
+                  <h2>Project 5</h2>
+                  <span>Javascript</span>
+                </li>
+                <li class="card">
+                  <div class="cardimg">
+                    <img src={RobGrad} alt="img" />
+                  </div>
+                  <h2>Project 6</h2>
+                  <span>Javascript</span>
+                </li>
+                <li class="card">
+                  <div class="cardimg">
+                    <img src={RobGrad} alt="img" />
+                  </div>
+                  <h2>Project 7</h2>
+                  <span>Javascript</span>
+                </li>
+                <li class="card">
+                  <div class="cardimg">
+                    <img src={RobGrad} alt="img" />
+                  </div>
+                  <h2>Project 8</h2>
+                  <span>Javascript</span>
+                </li>
+              </ul>
+            </div>
+          </body>
         </div>
 
         <div

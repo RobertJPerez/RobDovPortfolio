@@ -101,6 +101,72 @@ p {
   font-family: 'Oleo Script', cursive;
 }
 
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 35px;
+}
+
+.wrapper {
+  max-width: 1100px;
+  width: 100%;
+}
+
+.wrapper .carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  gap: 16px;
+  overflow: hidden;
+}
+
+.carousel :where(.card, .cardimg) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.carousel .card {
+  height: 342px;
+  list-style: none;
+  background: black;
+  border-radius: 8px;
+  display: flex;
+  cursor: pointer;
+  padding-bottom: 15px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card .cardimg {
+  background: white;
+  width: 148px;
+  height: 148px;
+  border-radius: 50%;
+}
+
+.card .cardimg img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid white;
+}
+
+.card h2 {
+  font-weight: 500;
+  font-size: 1.56rem;
+  margin: 30px 0 5px;
+}
+
+.card span {
+  font-size: 1.31rem;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
