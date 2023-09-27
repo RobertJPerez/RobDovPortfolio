@@ -3,9 +3,9 @@ import '../App.css';
 import { Tooltip } from 'react-tooltip';
 import RobGrad from '../images/RobGrad.png';
 import 'react-tooltip/dist/react-tooltip.css';
-import { Carousel, initTE } from 'tw-elements';
-
-initTE({ Carousel });
+import Carousel from './Carousel';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const TOOLTIP_IDS = [
   'tooltip1',
@@ -378,75 +378,7 @@ function Hero() {
         </div>
 
         <div className="snap-start bg-white w-screen h-screen text-white text-raleway">
-          <body>
-            <div class="wrapper">
-              <ul class="carousel">
-                <li class="card">
-                  <div class="cardimg">
-                    <img src={RobGrad} alt="img" />
-                  </div>
-                  <h2>Project 1</h2>
-                  <span>Javascript</span>
-                </li>
-                <li class="card">
-                  <div class="cardimg">
-                    <img src={RobGrad} alt="img" />
-                  </div>
-                  <h2>Project 1</h2>
-                  <span>Javascript</span>
-                </li>
-                <li class="card">
-                  <div class="cardimg">
-                    <img src={RobGrad} alt="img" />
-                  </div>
-                  <h2>Project 2</h2>
-                  <span>Javascript</span>
-                </li>
-                <li class="card">
-                  <div class="cardimg">
-                    <img src={RobGrad} alt="img" />
-                  </div>
-                  <h2>Project 3</h2>
-                  <span>Javascript</span>
-                </li>
-                <li class="card">
-                  <div class="cardimg">
-                    <img src={RobGrad} alt="img" />
-                  </div>
-                  <h2>Project 4</h2>
-                  <span>Javascript</span>
-                </li>
-                <li class="card">
-                  <div class="cardimg">
-                    <img src={RobGrad} alt="img" />
-                  </div>
-                  <h2>Project 5</h2>
-                  <span>Javascript</span>
-                </li>
-                <li class="card">
-                  <div class="cardimg">
-                    <img src={RobGrad} alt="img" />
-                  </div>
-                  <h2>Project 6</h2>
-                  <span>Javascript</span>
-                </li>
-                <li class="card">
-                  <div class="cardimg">
-                    <img src={RobGrad} alt="img" />
-                  </div>
-                  <h2>Project 7</h2>
-                  <span>Javascript</span>
-                </li>
-                <li class="card">
-                  <div class="cardimg">
-                    <img src={RobGrad} alt="img" />
-                  </div>
-                  <h2>Project 8</h2>
-                  <span>Javascript</span>
-                </li>
-              </ul>
-            </div>
-          </body>
+          <Carousel></Carousel>
         </div>
 
         <div
