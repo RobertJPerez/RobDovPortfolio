@@ -3,9 +3,10 @@ import '../App.css';
 import { Tooltip } from 'react-tooltip';
 import RobGrad from '../images/RobGrad.png';
 import 'react-tooltip/dist/react-tooltip.css';
-import { Carousel, initTE } from 'tw-elements';
-
-initTE({ Carousel });
+import Carousel from './Carousel';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import BlogCarousel from './BlogCarousel';
 
 const TOOLTIP_IDS = [
   'tooltip1',
@@ -159,7 +160,7 @@ function Hero() {
           <div className="sm:w-screen w-1/2 h-screen flex flex-row items-center justify-center bg-white">
             <div className="md:w-1/2 sm:hidden">img</div>
             <div className="sm:w-11/12 w-1/2 items-center sm:ml-3 sm:space-y-4">
-              <h2 className="font-oleo sm:mr-4">Experience</h2>
+              <h2 className="font-oleo sm:mr-4">Career</h2>
               <p className="font-raleway text-base text-justify sm:w-4/5 sm:m-10 justify-center text-gray-800 peer-checked:hidden">
                 Born in the year 2000, my life has been characterized by
                 constant change and innovation. From an early age, I was
@@ -287,7 +288,6 @@ function Hero() {
             </div>
           </div>
         </div>
-
         <div
           ref={divRefs.current[2]}
           id="div3"
@@ -378,83 +378,15 @@ function Hero() {
         </div>
 
         <div className="snap-start bg-white w-screen h-screen text-white text-raleway">
-          <body>
-            <div class="wrapper">
-              <ul class="carousel">
-                <li class="card">
-                  <div class="cardimg">
-                    <img src={RobGrad} alt="img" />
-                  </div>
-                  <h2>Project 1</h2>
-                  <span>Javascript</span>
-                </li>
-                <li class="card">
-                  <div class="cardimg">
-                    <img src={RobGrad} alt="img" />
-                  </div>
-                  <h2>Project 1</h2>
-                  <span>Javascript</span>
-                </li>
-                <li class="card">
-                  <div class="cardimg">
-                    <img src={RobGrad} alt="img" />
-                  </div>
-                  <h2>Project 2</h2>
-                  <span>Javascript</span>
-                </li>
-                <li class="card">
-                  <div class="cardimg">
-                    <img src={RobGrad} alt="img" />
-                  </div>
-                  <h2>Project 3</h2>
-                  <span>Javascript</span>
-                </li>
-                <li class="card">
-                  <div class="cardimg">
-                    <img src={RobGrad} alt="img" />
-                  </div>
-                  <h2>Project 4</h2>
-                  <span>Javascript</span>
-                </li>
-                <li class="card">
-                  <div class="cardimg">
-                    <img src={RobGrad} alt="img" />
-                  </div>
-                  <h2>Project 5</h2>
-                  <span>Javascript</span>
-                </li>
-                <li class="card">
-                  <div class="cardimg">
-                    <img src={RobGrad} alt="img" />
-                  </div>
-                  <h2>Project 6</h2>
-                  <span>Javascript</span>
-                </li>
-                <li class="card">
-                  <div class="cardimg">
-                    <img src={RobGrad} alt="img" />
-                  </div>
-                  <h2>Project 7</h2>
-                  <span>Javascript</span>
-                </li>
-                <li class="card">
-                  <div class="cardimg">
-                    <img src={RobGrad} alt="img" />
-                  </div>
-                  <h2>Project 8</h2>
-                  <span>Javascript</span>
-                </li>
-              </ul>
-            </div>
-          </body>
+          <Carousel></Carousel>
         </div>
 
         <div
           ref={divRefs.current[3]}
           id="div4"
-          className="snap-start bg-purple-200 w-screen h-screen flex items-center justify-center"
+          className="snap-start bg-white w-screen h-screen text-raleway"
         >
-          4
+          <BlogCarousel></BlogCarousel>
         </div>
         <div
           ref={divRefs.current[4]}
