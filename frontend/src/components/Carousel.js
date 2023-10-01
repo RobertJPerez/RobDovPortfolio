@@ -13,7 +13,7 @@ function Arrow(props) {
         ...style,
         display: 'block',
         background: 'black',
-        top: '79%',
+        top: '50%',
         transform: 'translateY(-50%)',
       }}
       onClick={onClick}
@@ -55,64 +55,126 @@ function Carousel() {
     ],
   };
   return (
-    <div className="p-10 text-white justify-center">
-      <h2> Single Item</h2>
-      <Slider {...settings}>
-        <div className="card-container">
-          <div className="pcard">
-            <img src={RobGrad} alt="Rob" className="cardimg"></img>
-            <div>
-              <h2>Project 1</h2>
-              <h3>Java</h3>
+    <div className="carousel-container flex justify-center items-center p-10 text-white">
+      <div className="carousel-inner">
+        <h2 className="text-white mb-4">Single Item</h2>
+        <Slider {...settings}>
+          <div className="card-container">
+            <div className="pcard">
+              <div className="white-circle">
+                <img src={RobGrad} alt="Rob" className="cardimg"></img>
+              </div>
+              <div>
+                <h2>Ghiselberti Dental</h2>
+                <h3>Javascript, CSS, HTML, MongoDB</h3>
+                <a
+                  href="YOUR_URL_HERE"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-link-button"
+                >
+                  Visit Site
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="card-container">
-          <div className="pcard">
-            <img src={RobGrad} alt="Rob" className="cardimg"></img>
-            <div>
-              <h2>Project 2</h2>
-              <h3>Java</h3>
+          <div className="card-container">
+            <div className="pcard">
+              <div className="white-circle">
+                <img src={RobGrad} alt="Rob" className="cardimg"></img>
+              </div>
+              <div>
+                <h2>Anywhere AI</h2>
+                <h3>MERN Stack, ChatGPT API</h3>
+                <a
+                  href="YOUR_URL_HERE"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-link-button"
+                >
+                  Visit Site
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="card-container">
-          <div className="pcard">
-            <img src={RobGrad} alt="Rob" className="cardimg"></img>
-            <div>
-              <h2>Project 3</h2>
-              <h3>Java</h3>
+          <div className="card-container">
+            <div className="pcard">
+              <div className="white-circle">
+                <img src={RobGrad} alt="Rob" className="cardimg"></img>
+              </div>
+              <div>
+                <h2>Project 3</h2>
+                <h3>Java</h3>
+                <a
+                  href="YOUR_URL_HERE"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-link-button"
+                >
+                  Visit Site
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="card-container">
-          <div className="pcard">
-            <img src={RobGrad} alt="Rob" className="cardimg"></img>
-            <div>
-              <h2>Project 4</h2>
-              <h3>Java</h3>
+          <div className="card-container">
+            <div className="pcard">
+              <div className="white-circle">
+                <img src={RobGrad} alt="Rob" className="cardimg"></img>
+              </div>
+              <div>
+                <h2>Project 4</h2>
+                <h3>Java</h3>
+                <a
+                  href="YOUR_URL_HERE"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-link-button"
+                >
+                  Visit Site
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="card-container">
-          <div className="pcard">
-            <img src={RobGrad} alt="Rob" className="cardimg"></img>
-            <div>
-              <h2>Project 5</h2>
-              <h3>Java</h3>
+          <div className="card-container">
+            <div className="pcard">
+              <div className="white-circle">
+                <img src={RobGrad} alt="Rob" className="cardimg"></img>
+              </div>
+              <div>
+                <h2>Project 5</h2>
+                <h3>Java</h3>
+                <a
+                  href="YOUR_URL_HERE"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-link-button"
+                >
+                  Visit Site
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="card-container">
-          <div className="pcard">
-            <img src={RobGrad} alt="Rob" className="cardimg"></img>
-            <div>
-              <h2>Project 6</h2>
-              <h3>Java</h3>
+          <div className="card-container">
+            <div className="pcard">
+              <div className="white-circle">
+                <img src={RobGrad} alt="Rob" className="cardimg"></img>
+              </div>
+              <div>
+                <h2>Project 6</h2>
+                <h3>Java</h3>
+                <a
+                  href="YOUR_URL_HERE"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-link-button"
+                >
+                  Visit Site
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-      </Slider>
+        </Slider>
+      </div>
     </div>
   );
 }
