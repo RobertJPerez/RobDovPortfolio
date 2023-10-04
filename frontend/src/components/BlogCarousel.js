@@ -1,5 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
+import { Link } from 'react-router-dom';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Newspaper from '../images/Newspaper.png';
@@ -57,7 +58,7 @@ function BlogCarousel() {
   return (
     <div className="carousel-container flex justify-center items-center p-10 text-white">
       <div className="carousel-inner">
-        <h2 className="text-white mb-4">Single Item</h2>
+        <h2 className="text-black font-oleo mb-10">Blogs</h2>
         <Slider {...settings}>
           <div className="card-container">
             <div className="pcard">
@@ -65,16 +66,11 @@ function BlogCarousel() {
                 <img src={Newspaper} alt="Rob" className="cardimg"></img>
               </div>
               <div>
-                <h2>Ghiselberti Dental</h2>
-                <h3>Javascript, CSS, HTML, MongoDB</h3>
-                <a
-                  href="YOUR_URL_HERE"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="project-link-button"
-                >
-                  Visit Site
-                </a>
+                <h2>Site Done!</h2>
+                <h3>Oct. 1st, 2023</h3>
+                <Link to="/sitedone" className="project-link-button">
+                  Read Blog
+                </Link>
               </div>
             </div>
           </div>
@@ -84,16 +80,11 @@ function BlogCarousel() {
                 <img src={Newspaper} alt="Rob" className="cardimg"></img>
               </div>
               <div>
-                <h2>Anywhere AI</h2>
-                <h3>MERN Stack, ChatGPT API</h3>
-                <a
-                  href="YOUR_URL_HERE"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="project-link-button"
-                >
-                  Visit Site
-                </a>
+                <h2>Lessons Learned.</h2>
+                <h3>September 30th, 2023</h3>
+                <Link to="/lessonslearned" className="project-link-button">
+                  Read Blog
+                </Link>
               </div>
             </div>
           </div>
@@ -103,16 +94,11 @@ function BlogCarousel() {
                 <img src={Newspaper} alt="Rob" className="cardimg"></img>
               </div>
               <div>
-                <h2>Project 3</h2>
-                <h3>Java</h3>
-                <a
-                  href="YOUR_URL_HERE"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="project-link-button"
-                >
-                  Visit Site
-                </a>
+                <h2>Agile in Action.</h2>
+                <h3>Sept. 22nd, 2023</h3>
+                <Link to="/agileinaction" className="project-link-button">
+                  Read Blog
+                </Link>
               </div>
             </div>
           </div>
@@ -122,16 +108,11 @@ function BlogCarousel() {
                 <img src={Newspaper} alt="Rob" className="cardimg"></img>
               </div>
               <div>
-                <h2>Project 4</h2>
-                <h3>Java</h3>
-                <a
-                  href="YOUR_URL_HERE"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="project-link-button"
-                >
-                  Visit Site
-                </a>
+                <h2>Dental Development</h2>
+                <h3>Sept. 8th, 2023</h3>
+                <Link to="/dentaldevelopment" className="project-link-button">
+                  Read Blog
+                </Link>
               </div>
             </div>
           </div>
@@ -141,16 +122,11 @@ function BlogCarousel() {
                 <img src={Newspaper} alt="Rob" className="cardimg"></img>
               </div>
               <div>
-                <h2>Project 5</h2>
-                <h3>Java</h3>
-                <a
-                  href="YOUR_URL_HERE"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="project-link-button"
-                >
-                  Visit Site
-                </a>
+                <h2>AI Everywhere</h2>
+                <h3>Aug. 26th, 2023</h3>
+                <Link to="/aieverywhere" className="project-link-button">
+                  Read Blog
+                </Link>
               </div>
             </div>
           </div>
@@ -160,16 +136,25 @@ function BlogCarousel() {
                 <img src={Newspaper} alt="Rob" className="cardimg"></img>
               </div>
               <div>
-                <h2>Project 6</h2>
-                <h3>Java</h3>
-                <a
-                  href="YOUR_URL_HERE"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="project-link-button"
-                >
-                  Visit Site
-                </a>
+                <h2>Real World Apps</h2>
+                <h3>Jul. 19th, 2023</h3>
+                <Link to="/realworldapps" className="project-link-button">
+                  Read Blog
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="card-container">
+            <div className="pcard">
+              <div className="white-circle">
+                <img src={Newspaper} alt="Rob" className="cardimg"></img>
+              </div>
+              <div>
+                <h2>Internship Secured</h2>
+                <h3>Jul. 1st, 2023</h3>
+                <Link to="/internshipsecured" className="project-link-button">
+                  Read Blog
+                </Link>
               </div>
             </div>
           </div>
