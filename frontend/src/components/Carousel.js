@@ -38,12 +38,13 @@ function Carousel() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     nextArrow: <Arrow />,
     prevArrow: <Arrow />,
     initialSlide: 0,
     useCSS: true,
+    autoplay: true,
 
     responsive: [
       {
@@ -69,6 +70,7 @@ function Carousel() {
   return (
     <div className="carousel-container flex justify-center items-center p-10 text-white">
       <div className="carousel-inner">
+        <h2 className="text-black font-oleo mb-10">Projects</h2>
         <Slider {...settings}>
           <div className="card-container">
             <div className="pcard">

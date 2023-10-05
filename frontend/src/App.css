@@ -35,9 +35,15 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #fff;
+  background-color: transparent;
   z-index: 10;
   padding: 10px 0;
+}
+
+@media (max-width: 639px) {
+  .ph\:hidden {
+    display: none;
+  }
 }
 
 .header-button {
@@ -145,7 +151,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 0; /* Adjust vertical margin according to preference */
+  margin: 0 10px; /* Adjust vertical margin according to preference */
 }
 
 .slick-slider .slick-list .slick-track .slick-slide {
@@ -202,6 +208,20 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.phone {
+  transform: scale(0.65);
+}
+.imgmult {
+  transform: scale(1.1);
+}
+
+.element {
+  overflow-y: auto;
+  overflow-x: hidden;
+  overflow: scroll;
+  min-height: 100vh;
 }
 
 /* Adjust for larger screens */

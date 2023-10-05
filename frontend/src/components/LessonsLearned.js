@@ -4,15 +4,15 @@ import RobGrad from '../images/RobGrad.png';
 
 function LessonsLearned() {
   return (
-    <div className="flex justify-center items-center h-screen">
-      <div className="w-1/3">
+    <div className="flex flex-col justify-start md:justify-center items-center min-h-screen px-4 md:px-0 element">
+      <div className="max-w-xl md:max-w-2xl lg:max-w-3xl xl:max-w-4xl w-full">
         <h1 className="font-oleo text-center">Blog:</h1>
         <img src={RobGrad} alt="Rob Grad" className="w-[250px] mx-auto mt-4" />
         <div className="text-left mt-10">
           <h2 className="font-raleway">Lessons Learned</h2>
           <p className="text-base text-gray-600">Sept 30. 2023</p>
           <p className="text-base text-gray-600 mb-10">By Robert Perez</p>
-          <p className="text-base font-raleway text-black w-[700px] text-justify mb-8">
+          <p className="text-base font-raleway text-black text-justify mb-8">
             It's with a heavy heart yet immense gratitude that I reflect on my
             time with the team at Sentry Interactive Holdings. This internship
             transcended the conventional boundaries of academic exposure,
@@ -23,7 +23,7 @@ function LessonsLearned() {
             development and fortified my cross-functional capabilities. Let's
             explore some of the pinnacle moments of my tenure.
           </p>
-          <p className="text-base font-raleway text-black w-[700px] text-justify mb-8">
+          <p className="text-base font-raleway text-black text-justify mb-8">
             My journey at Sentry Interactive Holdings was punctuated by the
             development of 'Anywhere AI', a versatile Google Chrome extension
             enabling users to effortlessly engage with the ChatGPT API across
@@ -34,7 +34,7 @@ function LessonsLearned() {
             an idea into a tangible tool enhancing user experiences was the very
             epitome of my motivation to pursue this profession.
           </p>
-          <p className="text-base font-raleway text-black w-[700px] text-justify mb-8">
+          <p className="text-base font-raleway text-black text-justify mb-8">
             Beyond the tangible product creation, I cherish the Agile
             methodologies I integrated into our compact team. Optimizing our
             daily scrum rituals and fostering an atmosphere of uninhibited
@@ -46,7 +46,7 @@ function LessonsLearned() {
             subsequent endeavors.
           </p>
         </div>
-        <Link to="/" className="home-link-button">
+        <Link to="/" className="home-link-button mb-3">
           Return Home
         </Link>
       </div>

@@ -4,19 +4,19 @@ import RobLaptop from '../images/RobLaptop.jpg';
 
 function SiteDone() {
   return (
-    <div className="flex justify-center items-center h-screen">
-      <div className="w-1/3">
-        <h1 className="font-oleo text-center">Blog:</h1>
+    <div className="flex flex-col justify-start md:justify-center items-center min-h-screen px-4 md:px-0 element">
+      <div className="max-w-xl md:max-w-2xl lg:max-w-3xl xl:max-w-4xl w-full">
+        <h1 className="font-oleo text-center text-2xl md:text-4xl">Blog:</h1>
         <img
           src={RobLaptop}
-          alt="Rob Grad"
-          className="w-[250px] mx-auto mt-4"
+          alt="Rob with Certificates"
+          className="w-full max-w-[250px] mx-auto mt-4"
         />
         <div className="text-left mt-10">
-          <h2 className="font-raleway">Site Done!</h2>
+          <h2 className="font-raleway text-xl md:text-2xl">Site Done!</h2>
           <p className="text-base text-gray-600">Oct 1. 2023</p>
           <p className="text-base text-gray-600 mb-10">By Robert Perez</p>
-          <p className="text-base font-raleway text-black w-[700px] text-justify mb-8">
+          <p className="text-base font-raleway text-black text-justify mb-8">
             It brings me great joy to unveil version 2.0 of my personal website!
             This endeavor has been a significant undertaking, spanning several
             months of intermittent effort. The evolution from my initial website
@@ -28,7 +28,7 @@ function SiteDone() {
             platform as much as I enjoyed crafting it. Let's delve into some
             standout features.
           </p>
-          <p className="text-base font-raleway text-black w-[700px] text-justify mb-8">
+          <p className="text-base font-raleway text-black text-justify mb-8">
             The technology stack for this website comprises React.js and
             Tailwind CSS. React, being my go-to front-end framework (which was
             notably missing during the creation of my maiden site), was a
@@ -39,7 +39,7 @@ function SiteDone() {
             experience that's both visually appealing and feature-rich across
             devices.
           </p>
-          <p className="text-base font-raleway text-black w-[700px] text-justify mb-8">
+          <p className="text-base font-raleway text-black text-justify mb-8">
             The intricate details, be it the snappy page transitions, the
             buttery smooth scroll, the dynamic carousel, the comprehensive
             skills showcase, intuitive drop-down menus, or the revamped contact
@@ -50,7 +50,7 @@ function SiteDone() {
             share via the enhanced contact section.
           </p>
         </div>
-        <Link to="/" className="home-link-button">
+        <Link to="/" className="home-link-button mb-3">
           Return Home
         </Link>
       </div>

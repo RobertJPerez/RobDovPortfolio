@@ -142,7 +142,7 @@ function Hero() {
 
   return (
     <div>
-      <div className="header space-x-14">
+      <div className="header space-x-14 ph:hidden ph:block">
         {TOOLTIP_IDS.map((tooltipId, i) => (
           <TooltipButton
             key={tooltipId}
@@ -154,29 +154,33 @@ function Hero() {
         ))}
       </div>
 
-      <div className="snap-y snap-mandatory h-screen w-screen overflow-scroll">
+      <div className="snap-y snap-mandatory h-screen w-screen overflow-scroll lp:scale-90 lp:mt-6">
         <div
           ref={divRefs.current[0]}
           id="div1"
           className="snap-start bg-white w-screen h-screen flex flex-col items-center justify-center font-raleway "
         >
-          <img src={RobGrad} alt="Rob Grad" className="img-contained" />
-          <h3 className="text-gray-800 sm:mt-2">Welcome, I'm</h3>
-          <h1 className="font-oleo font-raleway sm:-mb-8 sm:-mt-4 mr-12">
+          <img
+            src={RobGrad}
+            alt="Rob Grad"
+            className="img-contained ph:scale-70"
+          />
+          <h3 className="text-gray-800 sm:mt-2 ph:-mb-2">Welcome, I'm</h3>
+          <h1 className="font-oleo font-raleway ph:-mb-10 sm:-mb-8 sm:-mt-4 mr-12">
             Robert
           </h1>
           <h1 className="font-oleo ml-10">Perez</h1>
           <h3 className="font-raleway -mt-2 mb-3">
             Agile Certified Full Stack Engineer
           </h3>
-          <div className="quoteBox bg-black p-1 rounded flex items-center justify-center w-[500px] mx-auto">
-            <p className="text-white text-base font-raleway leading-[33px] mb-[30px] col:text-[15px] col:leading-[28px] md:mx-[80px] col:mx-0 w-3/4 flex items-center justify-center mt-9">
+          <div className="quoteBox bg-black p-1 rounded flex items-center justify-center w-[500px] mx-auto ph:w-[320px] ">
+            <p className="text-white ph:text-sm text-base font-raleway leading-[33px] mb-[30px] col:text-[15px] col:leading-[28px] md:mx-[80px] col:mx-0 w-3/4 flex items-center justify-center mt-9">
               I turn ideas into outstanding Full Stack Applications with
               Effective Collaboration, that results in Team Success, Client
               Satifaction, User Engagment, and Ground Breaking Products.
             </p>
           </div>
-          <p className="text-base sm:px-12 w-[500px] text-gray-800 sm:mt-4">
+          <p className="text-base sm:px-12 w-[500px] text-gray-800 sm:mt-4 ph:text-sm ph:w-[300px]">
             Let’s start by looking at some of my work history and past
             accomplishments to back this up!
           </p>
@@ -192,12 +196,12 @@ function Hero() {
               <img
                 src={RobSmile}
                 alt="Rob"
-                className="object-cover h-full w-[500px] img-contained2 items-center justify-center"
+                className="object-cover h-full w-[500px] img-contained2 items-center justify-center imgmult"
               />
             </div>
 
-            <div className="career-content w-full sm:w-[550px] sm:p-0 flex flex-col items-center justify-center">
-              <h2 className="font-oleo mb-5">Career</h2>
+            <div className="career-content w-2/3 sm:w-[550px] sm:p-0 flex flex-col">
+              <h2 className="font-oleo">Career</h2>
               {showSummary ? (
                 <div className="font-raleway text-base text-justify mb-8 justify-center text-gray-800">
                   <p className="font-raleway text-base text-justify mb-8 justify-center text-gray-800 peer-checked:hidden font-bold">
@@ -246,7 +250,7 @@ function Hero() {
                   </p>
                 </>
               )}
-              <div className="space-x-4 mt-5">
+              <div className="space-x-4 mt-5 ph:mt-1">
                 <a
                   href="https://www.linkedin.com/in/robjperez/"
                   target="_blank"
@@ -274,7 +278,7 @@ function Hero() {
 
         <div className="snap-start bg-white w-screen h-screen flex items-center justify-center journey-container">
           <div className="w-full sm:w-1/2 h-screen flex flex-row items-center justify-center bg-white">
-            <div className="journey-content w-full sm:w-[500px] sm:p-0 flex flex-col items-center justify-center">
+            <div className="journey-content w-full sm:w-[500px] sm:p-0 flex flex-col items-center justify-center ph:scale-90">
               <h2 className="font-oleo mb-4">My Journey</h2>
 
               <div className="relative w-[400px] overflow-hidden sm:ml-9 mb-5">
@@ -397,14 +401,14 @@ function Hero() {
               <img
                 src={RobLaptop}
                 alt="Rob"
-                className="object-cover h-full w-[500px] img-contained2 items-center justify-center"
+                className="object-cover h-full w-[500px] img-contained2 items-center justify-center m-16 imgmult"
               />
             </div>
           </div>
         </div>
 
         <div className="snap-start bg-white w-screen h-screen flex flex-col items-center justify-center">
-          <div className="flex flex-row space-x-4">
+          <div className="flex flex-row space-x-4 ph:-mb-10">
             <button
               onClick={() => setActiveSkill('technical')}
               className={`border-2 rounded px-4 py-2 ${
@@ -427,7 +431,7 @@ function Hero() {
             </button>
           </div>
 
-          <div className="flex flex-row space-x-8 mt-9 m-10">
+          <div className="flex flex-row space-x-8 mt-9 m-10 ph:scale-65">
             {activeSkill === 'technical'
               ? techSkills.slice(0, 3).map((skill) => (
                   <div
@@ -457,7 +461,7 @@ function Hero() {
                 ))}
           </div>
 
-          <div className="flex flex-row space-x-8">
+          <div className="flex flex-row space-x-8 ph:scale-65 ph:-mt-20">
             {activeSkill === 'technical'
               ? techSkills.slice(3).map((skill) => (
                   <div
@@ -496,12 +500,12 @@ function Hero() {
           id="div3"
           className="snap-start bg-white w-screen h-screen flex flex-col items-center justify-center"
         >
-          <div className="w-full sm:w-1/2 h-screen flex flex-row items-center justify-center bg-white">
+          <div className="w-full sm:w-1/2 h-screen flex flex-row items-center justify-center bg-white ph:scale-90">
             <div className="w-1/2 flex items-center justify-center hidden lg:block mr-7">
               <img
                 src={RobPencil}
                 alt="Rob"
-                className="object-cover h-full w-[500px] img-contained2 items-center justify-center"
+                className="object-cover h-full w-[500px] img-contained2 items-center justify-center imgmult"
               />
             </div>
             <div className="career-content w-full sm:w-[550px] sm:p-0 flex flex-col">
@@ -537,7 +541,7 @@ function Hero() {
         </div>
 
         <div className="snap-start bg-white w-screen h-screen flex flex-col items-center justify-center">
-          <div className="w-full sm:w-3/4 h-screen flex flex-row items-center justify-center bg-white">
+          <div className="w-full sm:w-3/4 h-screen flex flex-row items-center justify-center bg-white ph:scale-75">
             <div className="career-content w-2/3 sm:w-[550px] sm:p-0 flex flex-col">
               <h2 className="font-oleo mb-3 text-left">Servant Leadership</h2>
               <p className="font-raleway text-base text-justify justify-center text-gray-800 peer-checked:hidden items-center justify-center">
@@ -651,10 +655,9 @@ function Hero() {
                   className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 ></textarea>
               </div>
-
               <button
                 type="submit"
-                className="bg-black hover:bg-black text-white font-bold py-3 px-28 rounded-3xl"
+                className="bg-black hover:bg-black text-white font-bold py-3 px-10 rounded-3xl ph:py-3 ph:px-10"
               >
                 Submit
               </button>
@@ -662,7 +665,7 @@ function Hero() {
                 href="https://www.linkedin.com/in/robjperez/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-black hover:bg-black text-white font-bold py-3 px-28 rounded-3xl ml-4"
+                className="bg-black hover:bg-black text-white font-bold py-3 px-10 rounded-3xl ph:py-3 ph:px-10 "
               >
                 Linkedin
               </a>

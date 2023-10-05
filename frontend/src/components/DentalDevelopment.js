@@ -4,19 +4,21 @@ import RobLaptop from '../images/RobLaptop.jpg';
 
 function DentalDevelopment() {
   return (
-    <div className="flex justify-center items-center h-screen">
-      <div className="w-1/3">
-        <h1 className="font-oleo text-center">Blog:</h1>
+    <div className="flex flex-col justify-start md:justify-center items-center min-h-screen px-4 md:px-0 element">
+      <div className="max-w-xl md:max-w-2xl lg:max-w-3xl xl:max-w-4xl w-full">
+        <h1 className="font-oleo text-center text-2xl md:text-4xl">Blog:</h1>
         <img
           src={RobLaptop}
           alt="Rob with Certificates"
-          className="w-[250px] mx-auto mt-4"
+          className="w-full max-w-[250px] mx-auto mt-4"
         />
         <div className="text-left mt-10">
-          <h2 className="font-raleway">Dental Development</h2>
+          <h2 className="font-raleway text-xl md:text-2xl">
+            Dental Development
+          </h2>
           <p className="text-base text-gray-600">Sept 22. 2023</p>
           <p className="text-base text-gray-600 mb-10">By Robert Perez</p>
-          <p className="text-base font-raleway text-black w-[700px] text-justify mb-8">
+          <p className="text-base font-raleway text-black text-justify mb-8">
             Exciting times ahead! I'm thrilled to reveal that I've recently
             entered into a partnership to conceive and create a bespoke website
             for Ghisalberti Dental. This contract marks not just a business
@@ -24,7 +26,7 @@ function DentalDevelopment() {
             However, as much as this represents a significant landmark, it's
             vital to reflect on the path that has brought me to this moment.
           </p>
-          <p className="text-base font-raleway text-black w-[700px] text-justify mb-8">
+          <p className="text-base font-raleway text-black text-justify mb-8">
             Starting from humble beginnings, my journey began with modest side
             projects, primarily for close friends and family. These endeavors
             were not just tasks, but learning experiences that sharpened my
@@ -36,9 +38,9 @@ function DentalDevelopment() {
             teaching me the art of translating abstract ideas into practical,
             digital masterpieces.
           </p>
-          <p className="text-base font-raleway text-black w-[700px] text-justify mb-8">
+          <p className="text-base font-raleway text-black text-justify mb-8">
             With Ghisalberti Dental, the challenge and opportunity lie in
-            capturing their distinct family buisness and translating it into a
+            capturing their distinct family business and translating it into a
             digital experience. Leveraging their specific needs against my
             extensive technical knowledge, I am geared up to curate a full-stack
             web application that aligns seamlessly with their brand identity.
@@ -49,7 +51,7 @@ function DentalDevelopment() {
             collaboration!
           </p>
         </div>
-        <Link to="/" className="home-link-button">
+        <Link to="/" className="home-link-button mb-3">
           Return Home
         </Link>
       </div>
