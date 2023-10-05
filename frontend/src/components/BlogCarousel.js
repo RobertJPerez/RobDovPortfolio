@@ -109,7 +109,7 @@ function BlogCarousel() {
                 <img src={Newspaper} alt="Rob" className="cardimg"></img>
               </div>
               <div>
-                <h2>Dental Development</h2>
+                <h2>Dental Dev.</h2>
                 <h3>Sept. 8th, 2023</h3>
                 <Link to="/dentaldevelopment" className="project-link-button">
                   Read Blog
