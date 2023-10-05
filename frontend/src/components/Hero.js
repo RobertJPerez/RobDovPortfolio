@@ -280,7 +280,9 @@ function Hero() {
           <div className="w-full sm:w-1/2 h-screen flex flex-row items-center justify-center bg-white">
             <div className="journey-content w-full sm:w-[500px] sm:p-0 flex flex-col items-center justify-center ph:scale-90">
               <h2 className="font-oleo mb-4">My Journey</h2>
-
+              <h3 className="font-raleway -mt-5 mb-3">
+                (Please open one at a time.)
+              </h3>
               <div className="relative w-[400px] overflow-hidden sm:ml-9 mb-5">
                 <input
                   type="checkbox"
