@@ -177,7 +177,7 @@ function Hero() {
             <p className="text-white ph:text-sm text-base font-raleway leading-[33px] mb-[30px] col:text-[15px] col:leading-[28px] md:mx-[80px] col:mx-0 w-3/4 flex items-center justify-center mt-9">
               I turn ideas into outstanding Full Stack Applications with
               Effective Collaboration, that results in Team Success, Client
-              Satifaction, User Engagment, and Ground Breaking Products.
+              Satifaction, User Engagement, and Ground-Breaking Products.
             </p>
           </div>
           <p className="text-base sm:px-12 w-[500px] text-gray-800 sm:mt-4 ph:text-sm ph:w-[300px]">
