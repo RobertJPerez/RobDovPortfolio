@@ -158,7 +158,7 @@ function Hero() {
         <div
           ref={divRefs.current[0]}
           id="div1"
-          className="snap-start bg-white w-screen h-screen flex flex-col items-center justify-center font-raleway "
+          className="snap-start bg-white w-screen h-screen flex flex-col items-center justify-center font-raleway ph:-mt-4"
         >
           <img
             src={RobGrad}
@@ -655,20 +655,22 @@ function Hero() {
                   className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 ></textarea>
               </div>
-              <button
-                type="submit"
-                className="bg-black hover:bg-black text-white font-bold py-3 px-10 rounded-3xl ph:py-3 ph:px-10"
-              >
-                Submit
-              </button>
-              <a
-                href="https://www.linkedin.com/in/robjperez/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-black hover:bg-black text-white font-bold py-3 px-10 rounded-3xl ph:py-3 ph:px-10 "
-              >
-                Linkedin
-              </a>
+              <div className="flex justify-between lg:justify-center">
+                <button
+                  type="submit"
+                  className="bg-black hover:bg-black text-white font-bold py-3 px-10 rounded-3xl ph:py-3 ph:px-10 mr-2"
+                >
+                  Submit
+                </button>
+                <a
+                  href="https://www.linkedin.com/in/robjperez/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-black hover:bg-black text-white font-bold py-3 px-10 rounded-3xl ph:py-3 ph:px-10"
+                >
+                  Linkedin
+                </a>
+              </div>
             </form>
             <div className="flex-1 flex items-center justify-center hidden lg:flex">
               <img
